@@ -1,5 +1,9 @@
 # lab02-debugging
+I am Avi Serebrenik, I worked with Dan Gerhardt.
+Solution: 
+Found each bug: first was a compiler error for vec2, then not using uv2 over there. Then I found that the warping was due to dividing x by x at the top instead of x by y to get the right screen size. Next we saw that we wanted the floor to extend further, so we extended ray marching loop count. Finally we knew the reflections were wrong and it was somewhere in the specular area, but needed help to point out that we were reflecting eye instead of dir.
 
+Link: https://www.shadertoy.com/view/tclBWf
 # Setup 
 
 Create a [Shadertoy account](https://www.shadertoy.com/). Either fork this shadertoy, or create a new shadertoy and copy the code from the [Debugging Puzzle](https://www.shadertoy.com/view/flGfRc).
